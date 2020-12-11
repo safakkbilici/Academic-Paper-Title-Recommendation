@@ -50,6 +50,6 @@ def json2csv(path_to_json):
         'Category'         : data['categories']
     })
 
-    df.to_csv('../data/raw.csv',index=False)
+    df_all.to_csv('../data/raw.csv',index=False)
 
-    return df
+    return df_all
