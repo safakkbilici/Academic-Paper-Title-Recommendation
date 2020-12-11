@@ -1,7 +1,11 @@
 # Academic Paper Title Recommendation
 
-## prep_data.py
+## How to train?
+
+First extract the .csv file from ./data/df_to_model.tar.gz to ./data folder
+
+Then run the training scripts
 
 ```bash
-python3 prep_data.py --datapath '/path_to_json/data.json'
+python3 train_lstm
 ```
