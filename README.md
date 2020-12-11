@@ -21,5 +21,15 @@ First extract the .csv file from ./data/df_to_model.tar.gz to ./data folder
 Then run the training scripts
 
 ```bash
-python3 train_lstm
+python3 train_lstm.py
 ```
+
+## Generate titles from checkpoints
+
+./models folder contains checkpoints for specific epochs. Move your .json, .npy and .h5 file into ./modes (default = epoch 100). Then run
+
+```bash
+python3 generate_lstm.py --abstract /path/to/your_abstract_file.txt
+```
+
+Then the generated title will be saved in ./docs/titles folder.
