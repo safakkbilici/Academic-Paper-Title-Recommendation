@@ -2,7 +2,7 @@
 
 ## Data preparation from scratch
 
-Dowload the [arXiv dataset from Kaggle].
+Dowload the [arXiv dataset from Kaggle](https://www.kaggle.com/Cornell-University/arxiv).
 
 Save this in arbitrary path. Then run
 
