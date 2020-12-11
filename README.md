@@ -1,6 +1,6 @@
 # Academic Paper Title Recommendation
 
-## How to train?
+## Training from scratch
 
 First extract the .csv file from ./data/df_to_model.tar.gz to ./data folder
 
