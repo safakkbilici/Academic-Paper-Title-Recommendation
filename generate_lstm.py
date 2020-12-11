@@ -27,7 +27,8 @@ headline = summarizer.summarize(data)
 print('Generated Tile: ')
 print(headline)
 
-with open("title_"+args.abstract,"w") as output:
+name = args.abstract.split('/')[-1]
+with open('./docs/titles/'+"title_"+name,"w") as output:
     print('{}'.format(headline), file=output)
 
 
