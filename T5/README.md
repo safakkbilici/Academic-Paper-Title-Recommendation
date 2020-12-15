@@ -1,6 +1,8 @@
 ## Generating Titles With T5 Model
 
-<img src="../docs/img/t5_adam.png" alt="drawing" width="3500"/>
+
+![test image size](../docs/img/t5_adam.png){:height="90%" width="90%"}
+
 
 <img src="../docs/img/t5_attention.png" alt="drawing" width="500"/>
 
