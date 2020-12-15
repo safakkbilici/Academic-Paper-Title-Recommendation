@@ -1,6 +1,6 @@
 ## Generating Titles With T5 Model
 
-<img src="../docs/img/t5_adam.png" alt="drawing" width="2500"/>
+<img src="../docs/img/t5_adam.png" alt="drawing" width="3500"/>
 
 <img src="../docs/img/t5_attention.png" alt="drawing" width="500"/>
 
