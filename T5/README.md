@@ -19,6 +19,6 @@
 
 <img src="../docs/img/t5_vae.png" alt="drawing" width="5000"/>
 
-<img src="../docs/img/t5_t5.png" alt="drawing" width="5000" height="100"/>
+<img src="../docs/img/t5_t5.png" alt="drawing" width="5000" height="2000"/>
 
 
