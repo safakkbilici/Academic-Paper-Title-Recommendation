@@ -84,6 +84,8 @@ Seq2Seq LSTM is written with Keras. The summary of model looks like:
     Non-trainable params: 0
     __________________________________________________________________________________________________
 
+Additional: Also you can choose your Seq2Seq LSTM summarizer with global vectors for word representation (GloVe).
+
 ### Training from scratch
 
 First extract the .csv file from ./data/df_to_model.tar.gz to ./data folder (or create it from stracth).
@@ -106,9 +108,6 @@ Then the generated title will be saved in ./docs/titles folder.
 
 
 ## T5
-
-
-
 
 
 ## Data Analysis
