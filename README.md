@@ -50,6 +50,10 @@ We also provided exploratory data analysis scripts for papers in the ./utils dir
 
 <img src="./docs/img/stats1.png" alt="drawing" width="800"/>
 
+<img src="./docs/img/stats2.png" alt="drawing" width="800"/>
+
+<img src="./docs/img/stats3.png" alt="drawing" width="800"/>
+
 
 ## Data preparation from scratch
 
