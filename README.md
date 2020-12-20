@@ -50,13 +50,13 @@ We also provided exploratory data analysis scripts for papers in the ./utils dir
 
 <img src="./docs/img/stats1.png" alt="drawing" width="600"/>
 
-<img src="./docs/img/stats2.png" alt="drawing" width="600"/>
+<img src="./docs/img/stats2.png" alt="drawing" width="650"/>
 
-<img src="./docs/img/stats3.png" alt="drawing" width="600"/>
+<img src="./docs/img/stats3.png" alt="drawing" width="650"/>
 
-<img src="./docs/img/stats5.png" alt="drawing" width="600"/>
+<img src="./docs/img/stats5.png" alt="drawing" width="650"/>
 
-<img src="./docs/img/stats4.png" alt="drawing" width="600"/>
+<img src="./docs/img/stats4.png" alt="drawing" width="650"/>
 
     TOP 10 AUTHOR BY PUBLICATON:
        B. Aubert: 260
