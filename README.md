@@ -111,6 +111,8 @@ Then the generated title will be saved in ./docs/titles folder.
 
 ## T5
 
+We trained T5-Base (which has ~220M parameters with 12-layers, 768-hidden-state, 3072 feed-forward hidden-state, 12-heads) on arXiv paper dataset from scratch, using [🤗 Huggingface/transformers](https://github.com/huggingface/transformers) and [Simpletransformers](https://github.com/ThilinaRajapakse/simpletransformers).
+
 The T5 model was presented in [Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer](https://arxiv.org/pdf/1910.10683.pdf) by Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, Peter J. Liu.
 
 T5 is an encoder-decoder model pre-trained on a multi-task mixture of unsupervised and supervised tasks and for which each task is converted into a text-to-text format. T5 works well on a variety of tasks out-of-the-box by prepending a different prefix to the input corresponding to each task, e.g., for translation: translate English to German, ... for summarization: summarize...
@@ -123,10 +125,19 @@ The prefix can be easily added to csv_to_model file like
 train_df['prefix'] = "summarize"
 eval_df['prefix'] = "summarize"
 ```
-
-We trained T5-Base (which has ~220M parameters with 12-layers, 768-hidden-state, 3072 feed-forward hidden-state, 12-heads) on arXiv paper dataset from stractc, using [🤗 Huggingface/transformers](https://github.com/huggingface/transformers) and [Simpletransformers](https://github.com/ThilinaRajapakse/simpletransformers).
-
 Training and generating script for T5 also provided in ./T5 director.
+
+### Performance
+We trained T5 Base model on Colab's Tesla K80, with 11 GB of GPU RAM for 8 hours. 
+
+- Training Loss
+<img src="./docs/img/training_loss.png" alt="drawing" width="700"/>
+
+- GPU Utilization
+<img src="./docs/img/gpu_util.png" alt="drawing" width="700"/>
+
+- GPU Power Usage
+<img src="./docs/img/gpu_powerusage.png" alt="drawing" width="700"/>
 
 
 ## Data Analysis
