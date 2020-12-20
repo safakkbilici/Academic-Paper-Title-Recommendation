@@ -48,7 +48,7 @@ A sample example from json data:
 
 We also provided exploratory data analysis scripts for papers in the ./utils directory.
 
-<img src="./docs/img/stats1.png" alt="drawing" width="500"/>
+<img src="./docs/img/stats1.png" alt="drawing" width="800"/>
 
 
 ## Data preparation from scratch
