@@ -1,6 +1,7 @@
 # Academic Paper Title Recommendation
 
 Recommended repository names based on README:
+
     [['Using Language-Based Summarization Methods',
       'A New Method for Language Modeling',
       'The Supervised Summarization Model']]
@@ -47,6 +48,7 @@ A sample example from json data:
 
 We also provided exploratory data analysis scripts for papers in the ./utils directory.
 
+<img src="../docs/img/stats1.png" alt="drawing" width="500"/>
 
 
 ## Data preparation from scratch
