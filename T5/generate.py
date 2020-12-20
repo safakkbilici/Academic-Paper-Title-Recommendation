@@ -16,7 +16,7 @@ model_args = {
     "num_return_sequences": 3,
 }
 
-model = T5Model("t5","outputs/best_model", args=model_args)
+model = T5Model("t5","/content/drive/My Drive/outputs/best_model", args=model_args)
 
 abstr = ["summarize: "+"""Transfer learning, where a model is first pre-trained on a data-rich task before being finetuned  on a downstream task,
 has emerged as a powerful technique in natural language processing (NLP).  
