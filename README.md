@@ -195,7 +195,7 @@ model_args = {
     "num_return_sequences": 3,
 }
 
-model = T5Model("t5","/content/drive/My Drive/outputs/checkpoint-15982-epoch-1", args=model_args)
+model = T5Model("t5","/content/drive/My Drive/best_model", args=model_args)
 ```
 
 The prediction comes with:
