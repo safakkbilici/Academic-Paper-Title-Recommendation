@@ -111,7 +111,7 @@ Then the generated title will be saved in ./docs/titles folder.
 
 ## T5
 
-<img src="./docs/img/t5.jpg" alt="drawing" width="500"/>
+<img src="./docs/img/t5.jpg" alt="drawing" width="700"/>
 
 !!Colab is highly recommended!!
 
