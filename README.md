@@ -48,11 +48,29 @@ A sample example from json data:
 
 We also provided exploratory data analysis scripts for papers in the ./utils directory.
 
-<img src="./docs/img/stats1.png" alt="drawing" width="800"/>
+<img src="./docs/img/stats1.png" alt="drawing" width="600"/>
 
-<img src="./docs/img/stats2.png" alt="drawing" width="800"/>
+<img src="./docs/img/stats2.png" alt="drawing" width="600"/>
 
-<img src="./docs/img/stats3.png" alt="drawing" width="800"/>
+<img src="./docs/img/stats3.png" alt="drawing" width="600"/>
+
+<img src="./docs/img/stats5.png" alt="drawing" width="600"/>
+
+<img src="./docs/img/stats4.png" alt="drawing" width="600"/>
+
+    TOP 10 AUTHOR BY PUBLICATON:
+       B. Aubert: 260
+       The BABAR Collaboration: 193
+       CLEO Collaboration: 167
+       ZEUS Collaboration: 154
+       D0 Collaboration: 148
+       John Ellis: 140
+       Lorenzo Iorio: 138
+       R. Horsley: 138
+       Cambridge: 136
+       CDF Collaboration: 122
+       
+
 
 
 ## Data preparation from scratch
