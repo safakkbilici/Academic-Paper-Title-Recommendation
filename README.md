@@ -243,4 +243,16 @@ We also provided exploratory data analysis scripts for papers in the ./utils dir
        CDF Collaboration: 122
        
 
+## BibTex
+You can cite (not necessary at all) if you use checkpoints/codes/processed data.
 
+```tex
+@misc{safakb/eness,
+  author = {M. Safak BILICI, E. Sadi UYSAL},
+  title = {Generating Titles With Sequential Models},
+  year = {2020},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/safakkbilici/Academic-Paper-Title-Recommendation}}
+}
+```
