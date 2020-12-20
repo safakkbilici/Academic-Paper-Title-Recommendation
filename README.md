@@ -85,6 +85,7 @@ Seq2Seq LSTM is written with Keras. The summary of model looks like:
     __________________________________________________________________________________________________
 
 Additional: Also you can choose your Seq2Seq LSTM summarizer with global vectors for word representation (GloVe).
+We trained seq2seq LSTM on Colab's Tesla K80, with 11 GB of GPU RAM for 11 hours.
 
 The Seq2Seq LSTM model can learn wording of academic titles and capture the main topic of the paper, but it cannot specify the title. Results are not sufficient.
 
