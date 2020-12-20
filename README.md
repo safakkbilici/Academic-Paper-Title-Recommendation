@@ -111,6 +111,8 @@ Then the generated title will be saved in ./docs/titles folder.
 
 ## T5
 
+<img src="./docs/img/t5.jpg" alt="drawing" width="500"/>
+
 !!Colab is highly recommended!!
 
 We trained T5-Base (which has ~220M parameters with 12-layers, 768-hidden-state, 3072 feed-forward hidden-state, 12-heads) on arXiv paper dataset from scratch, using [🤗 Huggingface/transformers](https://github.com/huggingface/transformers) and [Simpletransformers](https://github.com/ThilinaRajapakse/simpletransformers).
