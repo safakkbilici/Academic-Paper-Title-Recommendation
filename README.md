@@ -86,6 +86,8 @@ Seq2Seq LSTM is written with Keras. The summary of model looks like:
 
 Additional: Also you can choose your Seq2Seq LSTM summarizer with global vectors for word representation (GloVe).
 
+The Seq2Seq LSTM model can learn wording of academic titles and capture the main topic of the paper, but it cannot specify the title. Results are not sufficient.
+
 ### Training from scratch
 
 First extract the .csv file from ./data/df_to_model.tar.gz to ./data folder (or create it from stracth).
@@ -108,6 +110,23 @@ Then the generated title will be saved in ./docs/titles folder.
 
 
 ## T5
+
+The T5 model was presented in [Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer](https://arxiv.org/pdf/1910.10683.pdf) by Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, Peter J. Liu.
+
+T5 is an encoder-decoder model pre-trained on a multi-task mixture of unsupervised and supervised tasks and for which each task is converted into a text-to-text format. T5 works well on a variety of tasks out-of-the-box by prepending a different prefix to the input corresponding to each task, e.g., for translation: translate English to German, ... for summarization: summarize...
+
+T5 is an encoder-decoder model and converts all NLP problems into a text-to-text format. It is trained using teacher forcing. This means that for training we always need an input sequence and a target sequence.
+
+The prefix can be easily added to csv_to_model file like
+
+```python
+train_df['prefix'] = "summarize"
+eval_df['prefix'] = "summarize"
+```
+
+We trained T5-Base (which has ~220M parameters with 12-layers, 768-hidden-state, 3072 feed-forward hidden-state, 12-heads) on arXiv paper dataset from stractc, using [🤗 Huggingface/transformers](https://github.com/huggingface/transformers) and [Simpletransformers](https://github.com/ThilinaRajapakse/simpletransformers).
+
+Training and generating script for T5 also provided in ./T5 director.
 
 
 ## Data Analysis
