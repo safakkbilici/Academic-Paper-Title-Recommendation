@@ -4,7 +4,6 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from lstm_seq2seq.library.utility.plot_utils import plot_and_save_history
 from lstm_seq2seq.library.seq2seq import Seq2SeqSummarizer
-from lstm_seq2seq.library.applications.fake_news_loader import fit_text
 import numpy as np
 
 LOAD_EXISTING_WEIGHTS = True
