@@ -48,15 +48,20 @@ A sample example from json data:
 
 We also provided exploratory data analysis scripts for papers in the ./utils directory.
 
-<img src="./docs/img/stats1.png" alt="drawing" width="600"/>
+- Top 10 categories
+<img src="./docs/img/stats1.png" alt="drawing" width="700"/>
 
-<img src="./docs/img/stats2.png" alt="drawing" width="650"/>
+- Distribution Over Category Frequenicies
+<img src="./docs/img/stats2.png" alt="drawing" width="70"/>
 
-<img src="./docs/img/stats3.png" alt="drawing" width="650"/>
+- Top 10 Popular Categories From 1995 To 2012
+<img src="./docs/img/stats3.png" alt="drawing" width="700"/>
 
-<img src="./docs/img/stats5.png" alt="drawing" width="650"/>
+- Top 50 Used Words In Abstracts With Word Length > 3
+<img src="./docs/img/stats5.png" alt="drawing" width="700"/>
 
-<img src="./docs/img/stats4.png" alt="drawing" width="650"/>
+- Word Cloud For Top 100 Words
+<img src="./docs/img/stats4.png" alt="drawing" width="700"/>
 
     TOP 10 AUTHOR BY PUBLICATON:
        B. Aubert: 260
