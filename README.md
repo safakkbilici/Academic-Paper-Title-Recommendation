@@ -52,7 +52,7 @@ We also provided exploratory data analysis scripts for papers in the ./utils dir
 <img src="./docs/img/stats1.png" alt="drawing" width="700"/>
 
 - Distribution Over Category Frequenicies
-<img src="./docs/img/stats2.png" alt="drawing" width="70"/>
+<img src="./docs/img/stats2.png" alt="drawing" width="700"/>
 
 - Top 10 Popular Categories From 1995 To 2012
 <img src="./docs/img/stats3.png" alt="drawing" width="700"/>
