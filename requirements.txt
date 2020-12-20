@@ -5,4 +5,3 @@ numpy==1.19.4
 scipy==1.4.1
 h5py==2.10.0
 matplotlib==3.2.2
-nltk==3.2.5
