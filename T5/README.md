@@ -61,8 +61,7 @@ this titles are recommended/generated:
         ['Sensor networks: The novel concepts and perspectives',
          'Sensor Networks: Convergence and Applications',
          'The Applied Field Theory Theory of Sensor Networks for e+ e- to Sensing Networks']]
-         
-You can find other examples in ./T5 directory (in the README.md).
+        
 
 ### Checkpoints
 
@@ -100,6 +99,7 @@ predicted_title = model.predict(abss)
 predicted_title
 ```
 
+## Other Examples
 
 <img src="../docs/img/t5_adam.png" alt="drawing" width="5000"/>
 
