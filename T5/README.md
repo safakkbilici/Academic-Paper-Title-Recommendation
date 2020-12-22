@@ -16,8 +16,45 @@ chmod 777 build_local.sh
 ```bash
 python3 generate_local.py --abstract abstract.txt --checkpoint "checkpoint-15982-epoch-1"
 ```
-
 - 🤗
+
+
+## Generate Titles In CoLab
+
+The checkpoints of our model is provided in the [checkpoint-15982-epoch-1](https://drive.google.com/drive/folders/1-sKu2k3JHEo5F6OQXzM0HlNzrojau-Z1?usp=sharing) or [best_model](https://drive.google.com/drive/folders/1MJnqmXqXBNdb9UvchQ72oMFO4HBXC_mn?usp=sharing). Create a shortcut of this shared file then run the script
+
+```python
+!pip install simpletransformers
+from simpletransformers.t5 import T5Model
+model_args = {
+    "reprocess_input_data": True,
+    "overwrite_output_dir": True,
+    "max_seq_length": 256,
+    "eval_batch_size": 128,
+    "num_train_epochs": 1,
+    "save_eval_checkpoints": False,
+    "use_multiprocessing": False,
+    "num_beams": None,
+    "do_sample": True,
+    "max_length": 50,
+    "top_k": 50,
+    "top_p": 0.95,
+    "num_return_sequences": 3,
+}
+
+model = T5Model("t5","/content/drive/My Drive/checkpoint-15982-epoch-1", args=model_args)
+```
+
+The prediction comes with:
+```python
+abss =["summarize: "+"""We trained a large, deep convolutional neural network to classify the 1.3 million high-resolution images in the LSVRC-2010 ImageNet training set into the 1000 different classes. 
+On the test data, we achieved top-1 and top-5 error rates of 39.7% and 18.9% which is considerably better than the previous state-of-the-art results. 
+The neural network, which has 60 million parameters and 500,000 neurons, consists of five convolutional layers, some of which are followed by max-pooling layers, 
+and two globally connected layers with a final 1000-way softmax. To make training faster, we used non-saturating neurons and a very efficient GPU implementation of convolutional nets. 
+To reduce overfitting in the globally connected layers we employed a new regularization method that proved to be very effective."""]
+predicted_title = model.predict(abss)
+predicted_title
+```
 
 ## Training And Others
 !!Colab is highly recommended!!
@@ -82,42 +119,6 @@ this titles are recommended/generated:
          'Sensor Networks: Convergence and Applications',
          'The Applied Field Theory Theory of Sensor Networks for e+ e- to Sensing Networks']]
         
-
-### Checkpoints
-
-The checkpoints of our model is provided in the [drive link](https://drive.google.com/drive/folders/1MJnqmXqXBNdb9UvchQ72oMFO4HBXC_mn?usp=sharing). Create a shortcut of this shared file then run the script
-
-```python
-from simpletransformers.t5 import T5Model
-model_args = {
-    "reprocess_input_data": True,
-    "overwrite_output_dir": True,
-    "max_seq_length": 256,
-    "eval_batch_size": 128,
-    "num_train_epochs": 1,
-    "save_eval_checkpoints": False,
-    "use_multiprocessing": False,
-    "num_beams": None,
-    "do_sample": True,
-    "max_length": 50,
-    "top_k": 50,
-    "top_p": 0.95,
-    "num_return_sequences": 3,
-}
-
-model = T5Model("t5","/content/drive/My Drive/best_model", args=model_args)
-```
-
-The prediction comes with:
-```python
-abss =["summarize: "+"""We trained a large, deep convolutional neural network to classify the 1.3 million high-resolution images in the LSVRC-2010 ImageNet training set into the 1000 different classes. 
-On the test data, we achieved top-1 and top-5 error rates of 39.7% and 18.9% which is considerably better than the previous state-of-the-art results. 
-The neural network, which has 60 million parameters and 500,000 neurons, consists of five convolutional layers, some of which are followed by max-pooling layers, 
-and two globally connected layers with a final 1000-way softmax. To make training faster, we used non-saturating neurons and a very efficient GPU implementation of convolutional nets. 
-To reduce overfitting in the globally connected layers we employed a new regularization method that proved to be very effective."""]
-predicted_title = model.predict(abss)
-predicted_title
-```
 
 ## Other Examples
 
