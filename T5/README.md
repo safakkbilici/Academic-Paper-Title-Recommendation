@@ -1,5 +1,20 @@
 # Generating Titles With T5 Model
 
+## Generate Titles In Local
+Run the script
+```bash
+chmod 777 build_local.sh
+./build_local
+```
+- It simple creates a new conda environment with supported PyTorch and Simpletransformers.
+
+- Then go to provided checkpoints (find on main README.md, served as a drive link)
+
+- Extract it to /T5/best_model
+
+- Then play! 🤗
+
+## Training And Others
 !!Colab is highly recommended!!
 
 We trained T5-Base (which has ~220M parameters with 12-layers, 768-hidden-state, 3072 feed-forward hidden-state, 12-heads) on arXiv paper dataset from scratch, using [🤗 Huggingface/transformers](https://github.com/huggingface/transformers) and [Simpletransformers](https://github.com/ThilinaRajapakse/simpletransformers).
