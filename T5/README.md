@@ -8,7 +8,7 @@ chmod 777 build_local.sh
 ```
 - It simple creates a new conda environment with supported PyTorch and Simpletransformers.
 
-- Then go to provided checkpoints [checkpoint-15982-epoch-1](https://drive.google.com/drive/folders/1-sKu2k3JHEo5F6OQXzM0HlNzrojau-Z1?usp=sharing) or [best_model](https://drive.google.com/drive/folders/1MJnqmXqXBNdb9UvchQ72oMFO4HBXC_mn?usp=sharing) (find on main README.md, served as a drive link)
+- Then go to provided checkpoints [checkpoint-15982-epoch-1](https://drive.google.com/drive/folders/1-sKu2k3JHEo5F6OQXzM0HlNzrojau-Z1?usp=sharing) or [best_model](https://drive.google.com/drive/folders/1MJnqmXqXBNdb9UvchQ72oMFO4HBXC_mn?usp=sharing). Select one (we recommend you to latter one), and download it.
 
 - Extract it to /T5/best_model or /T5/best_model/checkpoint-15982-epoch-1
 
