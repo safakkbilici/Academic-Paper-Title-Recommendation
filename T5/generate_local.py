@@ -1,4 +1,9 @@
 from simpletransformers.t5 import T5Model
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument("--checkpoints", "-ckpts", help="checkpoints for t5 base",type = str, default = './best_model')
+parser.add_argument("--abstract", "-abs", help="abstract to generate title",type = str)
+args = parser.parse_args()
 
 model_args = {
     "reprocess_input_data": True,
@@ -16,14 +21,10 @@ model_args = {
     "num_return_sequences": 3,
 }
 
-model = T5Model("t5","./best_model", args=model_args,use_cuda=False)
-abss =["summarize: "+"""How can we perform efficient inference and learning in directed probabilistic models, 
-in the presence of continuous latent variables with intractable posterior distributions, and large datasets? 
-We introduce a stochastic variational inference and learning algorithm that scales to large datasets and, under some mild differentiability conditions, 
-even works in the intractable case. Our contributions is two-fold. 
-First, we show that a reparameterization of the variational lower bound yields a lower bound estimator that can be straightforwardly 
-optimized using standard stochastic gradient methods. Second, we show that for i.i.d. datasets with continuous latent variables per datapoint, 
-posterior inference can be made especially efficient by fitting an approximate inference model (also called a recognition model) 
-to the intractable posterior using the proposed lower bound estimator. Theoretical advantages are reflected in experimental results."""]
+with open(args.abstract) as f:
+    data = f.read()
+
+model = T5Model("t5",args.checkpoints, args=model_args,use_cuda=False)
+abss =["summarize: "+data]
 predicted_title = model.predict(abss)
 print(predicted_title)
