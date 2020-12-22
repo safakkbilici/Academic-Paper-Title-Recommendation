@@ -12,8 +12,9 @@ chmod 777 build_local.sh
 
 - Extract it to /T5/best_model
 
+- Then play! 🤗
 
-
+## Training And Others
 !!Colab is highly recommended!!
 
 We trained T5-Base (which has ~220M parameters with 12-layers, 768-hidden-state, 3072 feed-forward hidden-state, 12-heads) on arXiv paper dataset from scratch, using [🤗 Huggingface/transformers](https://github.com/huggingface/transformers) and [Simpletransformers](https://github.com/ThilinaRajapakse/simpletransformers).
