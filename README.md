@@ -251,6 +251,7 @@ We also provided exploratory data analysis scripts for papers in the ./utils dir
 
 Local server for demo is created by Flask API. Just run 
 ```
+cd demo
 conda activate simpletransformers
 python3 app.py
 ```
