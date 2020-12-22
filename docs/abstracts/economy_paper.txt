@@ -1,0 +1,13 @@
+In seeking to explain aspects of real-world economies that defy easy understanding when analysed via conventional means, Nobel Laureate Robert Shiller has since 2017 introduced and developed the idea of Narrative
+Economics, where observable economic factors such as the dynamics of prices in asset markets are explained
+largely as a consequence of the narratives (i.e., the stories) heard, told, and believed by participants in those
+markets. Shiller argues that otherwise irrational and difficult-to-explain behaviors, such as investors participating in highly volatile cryptocurrency markets, are best explained and understood in narrative terms: people
+invest because they believe, because they have a heartfelt opinion, about the future prospects of the asset,
+and they tell to themselves and others stories (narratives) about those beliefs and opinions. In this paper we
+describe what is, to the best of our knowledge, the first ever agent-based modelling platform that allows for
+the study of issues in narrative economics. We have created this by integrating and synthesizing research
+in two previously separate fields: opinion dynamics (OD), and agent-based computational economics (ACE)
+in the form of minimally-intelligent trader-agents operating in accurately modelled financial markets. We
+show here for the first time how long-established models in OD and in ACE can be brought together to enable the experimental study of issues in narrative economics, and we present initial results from our system.
+The program-code for our simulation platform has been released as freely-available open-source software on
+GitHub, to enable other researchers to replicate and extend our work.
