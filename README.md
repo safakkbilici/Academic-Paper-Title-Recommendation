@@ -249,6 +249,15 @@ We also provided exploratory data analysis scripts for papers in the ./utils dir
 
 <img src="./docs/img/demo.png" alt="drawing" width="700"/>
 
+Local server for demo is created by Flask API. Just run 
+```
+conda activate simpletransformers
+python3 app.py
+```
+and play!
+
+
+
 ## BibTex
 You can cite (not necessary at all) if you use checkpoints/codes/processed data.
 
