@@ -10,9 +10,14 @@ chmod 777 build_local.sh
 
 - Then go to provided checkpoints [checkpoint-15982-epoch-1](https://drive.google.com/drive/folders/1-sKu2k3JHEo5F6OQXzM0HlNzrojau-Z1?usp=sharing) or [best_model](https://drive.google.com/drive/folders/1MJnqmXqXBNdb9UvchQ72oMFO4HBXC_mn?usp=sharing) (find on main README.md, served as a drive link)
 
-- Extract it to /T5/best_model
+- Extract it to /T5/best_model or /T5/best_model/checkpoint-15982-epoch-1
 
-- Then play! 🤗
+- Then run!
+```bash
+python3 generate_local.py --abstract abstract.txt --checkpoint "checkpoint-15982-epoch-1"
+```
+
+- 🤗
 
 ## Training And Others
 !!Colab is highly recommended!!
