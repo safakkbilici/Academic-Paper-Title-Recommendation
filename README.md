@@ -245,6 +245,9 @@ We also provided exploratory data analysis scripts for papers in the ./utils dir
        Cambridge: 136
        CDF Collaboration: 122
        
+## Demo
+
+<img src="./docs/img/demo.png" alt="drawing" width="700"/>
 
 ## BibTex
 You can cite (not necessary at all) if you use checkpoints/codes/processed data.
