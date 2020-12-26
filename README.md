@@ -16,10 +16,10 @@ We have trained 2 models (yet).
 - T5 Base (best results)
 
 ## About The Data
-
-We use arXiv as a source for paper [dataset](https://www.kaggle.com/Cornell-University/arxiv). arXiv is a open pre-print and e-print website for papers and free.
-
-This dataset is in .json format, we provided scripts for parsing data. Also tokenization and other preprocessing scripts are provided, they are explained in tutorial section.
+### Crawler
+We create a crawler for collecting papers' titles and abstracts from arXiv which is a open pre-print and e-print website for papers and free. You can find the source code and manual for the crawler in README.md file under the crawler directory of repository. It can be used for collecting data from specific subfield of arXiv papers. However we used a kaggle [dataset](https://www.kaggle.com/Cornell-University/arxiv) when we train our models. So pretrained models are also trained with this dataset.
+### Kaggle Dataset
+Kaggle dataset is in .json format, we provided scripts for parsing data. Also tokenization and other preprocessing scripts are provided, they are explained in tutorial section.
 
 The cleaned, parsed and tokenized version of data is provided in ./data folder as compressed.
 
