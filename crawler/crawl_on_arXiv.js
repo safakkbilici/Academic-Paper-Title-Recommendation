@@ -5,36 +5,37 @@ main_func = async () =>{
 
     
     
-    var myArgs = process.argv.slice(2);
-    console.log('myArgs: ', myArgs);
-     
-    var field_arxiv = myArgs[0];
-    var from_page = myArgs[1];
-    var to_page = myArgs[2];
+    var myArgs = process.argv.slice(2); 
+    console.log('myArgs: ', myArgs); //parse the arguments 
+      
+    var field_arxiv = myArgs[0];     // first argument is crawled field like cs.cl
+    var from_page = myArgs[1];       // second argument is starting index
+    var to_page = myArgs[2];         // third argument is stopping index
     var last_page = from_page;
 
     var title = new Array();
     var abstracts = new Array();
 
     fetch_pages = async () => {
-        const browser = await puppeteer.launch({ headless: false });
-        const page = await browser.newPage();
+        const browser = await puppeteer.launch({ headless: false }); // if you do not want to open window while crawling set headless true
+        const page = await browser.newPage(); 
 
         let i;
 
         for (i = from_page; i < to_page; i++) {
             try{
+                //this url is taken from advanced search query of arXiv.org "https://arxiv.org/search/advanced"
                 await page.goto('https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=' + field_arxiv + '&terms-0-field=all&classification-physics_archives=all&classification-include_cross_list=include&date-filter_by=all_dates&date-year=&date-from_date=&date-to_date=&date-date_type=submitted_date&abstracts=show&size=200&order=-announced_date_first&start=' + i, { headless: false, timeout: 0 });
                 title.push(
                     await page.evaluate(() => {
-                        return document.querySelector('ol.breathe-horizontal li.arxiv-result p.title.is-5.mathjax')
+                        return document.querySelector('ol.breathe-horizontal li.arxiv-result p.title.is-5.mathjax') // select the title of paper of i.th index 
                             .innerText;
                     })
                 );
                 abstracts.push(
                     await page.evaluate(() => {
                         return document
-                            .querySelector('ol.breathe-horizontal li.arxiv-result span.abstract-full.has-text-grey-dark.mathjax')
+                            .querySelector('ol.breathe-horizontal li.arxiv-result span.abstract-full.has-text-grey-dark.mathjax') // select the abstract of paper of i.th index 
                             .innerText.trim();
                     })
                 );
@@ -42,7 +43,7 @@ main_func = async () =>{
                 
             }
             catch(err){
-                console.log('ERROR ON '+ i +'. page : '+ err);
+                console.log('ERROR ON '+ i +'. page : '+ err); // if any error accures while crawling, crawler stops and create csv file before it ends
                 break;
             }
 
@@ -57,7 +58,7 @@ main_func = async () =>{
 
     await fetch_pages();
 
-
+    // Make sure do not take unwanted symbols end of the abstacts
     abstract_clean = async() =>{
 
         let i;
@@ -69,7 +70,7 @@ main_func = async () =>{
 
     await abstract_clean();
 
-
+    //writing titles and abstracts to the csv file named "from_page + '_' + last_page + '.csv'" 
     csv_write = async() => {
         
         const fs = require('fs')
@@ -104,4 +105,4 @@ main_func = async () =>{
 
 }
 
-main_func();
+main_func(); // run crawler run!
