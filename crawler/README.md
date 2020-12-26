@@ -9,7 +9,7 @@ Install these libraries in your local.\
 
 ## How To Run
 You have to run ```crawl_on_arXiv.js``` file with three command line arguments.
-1. Which subfield do you want to crawl (You can find abbreviation of subfields [here](data/categories.json)) 
+1. Which subfield do you want to crawl (You can find abbreviation of subfields [here](https://github.com/safakkbilici/Academic-Paper-Title-Recommendation/blob/main/data/categories.json)) 
 2. Which index do you want to start crawling
 3. Which index do you want to stop
 
