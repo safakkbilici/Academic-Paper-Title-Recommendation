@@ -5,7 +5,7 @@ import pandas as pd
 drive.mount('/content/drive',force_remount=True)
 
 
-df = pd.read_csv('/content/drive/My Drive//data/df_to_model.csv')
+df = pd.read_csv('/content/drive/My Drive/data/df_to_model.csv')
 eval_df = df.sample(frac=0.2, random_state=101)
 train_df = df.drop(eval_df.index)
 
