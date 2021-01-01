@@ -246,8 +246,7 @@ We also provided exploratory data analysis scripts for papers in the ./utils dir
        CDF Collaboration: 122
        
 ## Demo
-
-<img src="./docs/img/demo.png" alt="drawing" width="700"/>
+<img src="./docs/gif/demo.gif" width="900" height="600" />
 
 Local server for demo is created by Flask API. Just run 
 ```
