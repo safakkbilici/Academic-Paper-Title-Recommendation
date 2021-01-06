@@ -256,7 +256,9 @@ python3 app.py
 ```
 and play!
 
+## What is missing?
 
+<img src="./docs/img/missing.jpeg" alt="drawing" width="500"/>
 
 ## BibTex
 You can cite (not necessary at all) if you use checkpoints/codes/processed data.
